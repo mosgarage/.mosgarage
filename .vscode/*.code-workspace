@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"path": "/home/ecampusdev/.mosgarage"
+		},
+		{
+			"path": "/home/ecampusdev/.mosgarage/workspaces/mosgarage"
+		},
+		{
+			"path": "/home/ecampusdev/.mosgarage/workspaces/ecampusdev"
+		},
+		{
+			"path": "/home/ecampusdev/OneDrive/Apps/code-sync/.mosgarage/.config"
+		},
+		{
+			"path": "/workspaces/mosgarage/.devcontainer/.vscode/mosgarage.code-workspace"
+		},
+		{
+			"path": "/workspaces/ecampusdev/.devcontainer/.vscode/ecampusdev.code-workspace"
+		},
+	]
+}
