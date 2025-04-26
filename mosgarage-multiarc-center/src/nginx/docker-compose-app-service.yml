@@ -1,0 +1,26 @@
+version: "3"
+services:
+  nginx:
+    container_name: nginx-api
+    image: acrtestmcwawebapp.azurecr.io/nginx-api:latest
+    ports:
+      - 80:80
+      - 443:443
+    depends_on:
+      - fastapi-rest-api
+      - flask-rest-api
+  fastapi-rest-api:
+    container_name: fastapi-rest-api
+    # Remove the build command for configuration file in azure web app service
+    image: acrtestmcwawebapp.azurecr.io/fastapi-rest-api:latest
+    environment:
+      - APP_VERSION=211204.225636      
+    ports:
+      - 8080:5000
+  flask-rest-api:
+    container_name: flask-rest-api
+    image: acrtestmcwawebapp.azurecr.io/flask-rest-api:latest
+    environment:
+      - APP_VERSION=211204.225636      
+    ports:
+      - 8181:5000

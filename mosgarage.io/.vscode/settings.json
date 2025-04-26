@@ -1,0 +1,18 @@
+{
+    "editor.inlineSuggest.showToolbar": "always",
+    "editor.inlineSuggest.syntaxHighlightingEnabled": true,
+    "editor.suggest.localityBonus": true,
+    "editor.suggest.preview": true,
+    "editor.suggest.shareSuggestSelections": true,
+    "editor.suggest.showStatusBar": true,
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "files.autoGuessEncoding": true,
+    "files.autoSaveWhenNoErrors": true,
+    "explorer.fileNesting.enabled": true,
+    "explorer.excludeGitIgnore": true,
+    "search.useGlobalIgnoreFiles": false,
+    "search.useParentIgnoreFiles": true,
+    "scm.alwaysShowActions": true,
+    "scm.alwaysShowRepositories": true,
+    "scm.workingSets.enabled": true
+}

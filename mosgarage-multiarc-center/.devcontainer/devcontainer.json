@@ -1,0 +1,24 @@
+{
+  "name": "dcworkspace",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "dcworkspace",
+  "workspaceFolder": "/dcworkspace",
+  "settings": {
+    "terminal.integrated.inheritEnv": false,
+    "terminal.integrated.shell.linux": "/bin/bash"
+  },
+  "extensions": [
+    "yzhang.markdown-all-in-one",
+    "tomoyukim.vscode-mermaid-editor",
+    "ms-vsliveshare.vsliveshare-pack",
+    "eamodio.gitlens",
+    "DavidAnson.vscode-markdownlint",
+    "ms-python.python",
+    "ms-vscode.azurecli",
+    "ms-azuretools.vscode-docker",
+  ],
+  "runArgs": [
+    "--init"
+  ],  
+  "postAttachCommand": "mkdir -p /home/$(id -un)/.ssh && touch /home/$(id -un)/.ssh/config && sudo chown -R dcuser:dcuser /var/run/docker.sock"
+}

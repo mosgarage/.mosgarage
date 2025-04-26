@@ -1,0 +1,18 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Version=1.0
+Terminal=false
+Type=Application
+Name=Microsoft Loop
+Exec=/snap/brave/501/opt/brave.com/brave/brave-browser --profile-directory=Default --app-id=ahjdipcglkflohmjbcjmjpidpbbiocpk
+Icon=brave-ahjdipcglkflohmjbcjmjpidpbbiocpk-Default
+StartupWMClass=crx_ahjdipcglkflohmjbcjmjpidpbbiocpk
+Actions=Ideas;Recent
+
+[Desktop Action Ideas]
+Name=Ideas
+Exec=/snap/brave/501/opt/brave.com/brave/brave-browser --profile-directory=Default --app-id=ahjdipcglkflohmjbcjmjpidpbbiocpk --app-launch-url-for-shortcuts-menu-item=https://loop.cloud.microsoft/ideas
+
+[Desktop Action Recent]
+Name=Recent
+Exec=/snap/brave/501/opt/brave.com/brave/brave-browser --profile-directory=Default --app-id=ahjdipcglkflohmjbcjmjpidpbbiocpk --app-launch-url-for-shortcuts-menu-item=https://loop.cloud.microsoft/recent

@@ -1,0 +1,25 @@
+version: "3"
+services:
+  nginx:
+    container_name: nginx-api
+    image: nginx-api:latest
+    ports:
+      - 80:80
+      - 443:443
+    depends_on:
+      - fastapi-rest-api
+      - flask-rest-api
+  fastapi-rest-api:
+    container_name: fastapi-rest-api
+    image: fastapi-rest-api:latest
+    environment:
+      - APP_VERSION=${APP_VERSION}       
+    ports:
+      - 8000:5000
+  flask-rest-api:
+    container_name: flask-rest-api
+    image: flask-rest-api:latest
+    environment:
+      - APP_VERSION=${APP_VERSION}    
+    ports:
+      - 7000:5000

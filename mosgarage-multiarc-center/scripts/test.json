@@ -1,0 +1,135 @@
+{
+  "id": "/subscriptions/e5c9fc83-fbd0-4368-9cb6-1b5823479b6d/resourceGroups/testmcwarg/providers/Microsoft.Resources/deployments/215504-115524",
+  "location": null,
+  "name": "215504-115524",
+  "properties": {
+    "correlationId": "5ccf3342-7936-47a7-a0f5-4f32da19bf8c",
+    "debugSetting": null,
+    "dependencies": [
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/e5c9fc83-fbd0-4368-9cb6-1b5823479b6d/resourceGroups/testmcwarg/providers/Microsoft.Web/serverfarms/AppServicePlan-testmcwawebapp",
+            "resourceGroup": "testmcwarg",
+            "resourceName": "AppServicePlan-testmcwawebapp",
+            "resourceType": "Microsoft.Web/serverfarms"
+          }
+        ],
+        "id": "/subscriptions/e5c9fc83-fbd0-4368-9cb6-1b5823479b6d/resourceGroups/testmcwarg/providers/Microsoft.Web/sites/testmcwawebapp",
+        "resourceGroup": "testmcwarg",
+        "resourceName": "testmcwawebapp",
+        "resourceType": "Microsoft.Web/sites"
+      }
+    ],
+    "duration": "PT56.2068063S",
+    "error": null,
+    "mode": "Incremental",
+    "onErrorDeployment": null,
+    "outputResources": [
+      {
+        "id": "/subscriptions/e5c9fc83-fbd0-4368-9cb6-1b5823479b6d/resourceGroups/testmcwarg/providers/Microsoft.ContainerRegistry/registries/acrtestmcwawebapp",
+        "resourceGroup": "testmcwarg"
+      },
+      {
+        "id": "/subscriptions/e5c9fc83-fbd0-4368-9cb6-1b5823479b6d/resourceGroups/testmcwarg/providers/Microsoft.Web/serverfarms/AppServicePlan-testmcwawebapp",
+        "resourceGroup": "testmcwarg"
+      },
+      {
+        "id": "/subscriptions/e5c9fc83-fbd0-4368-9cb6-1b5823479b6d/resourceGroups/testmcwarg/providers/Microsoft.Web/sites/testmcwawebapp",
+        "resourceGroup": "testmcwarg"
+      }
+    ],
+    "outputs": {
+      "acrLoginServer": {
+        "type": "String",
+        "value": "acrtestmcwawebapp.azurecr.io"
+      },
+      "webAppServer": {
+        "type": "String",
+        "value": "https://testmcwawebapp.azurewebsites.net/"
+      }
+    },
+    "parameters": {
+      "location": {
+        "type": "String",
+        "value": "eastus2"
+      },
+      "sku": {
+        "type": "String",
+        "value": "B2"
+      },
+      "webAppName": {
+        "type": "String",
+        "value": "testmcwawebapp"
+      }
+    },
+    "parametersLink": null,
+    "providers": [
+      {
+        "id": null,
+        "namespace": "Microsoft.Web",
+        "providerAuthorizationConsentState": null,
+        "registrationPolicy": null,
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiProfiles": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "defaultApiVersion": null,
+            "locationMappings": null,
+            "locations": [
+              "eastus2"
+            ],
+            "properties": null,
+            "resourceType": "serverfarms"
+          },
+          {
+            "aliases": null,
+            "apiProfiles": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "defaultApiVersion": null,
+            "locationMappings": null,
+            "locations": [
+              "eastus2"
+            ],
+            "properties": null,
+            "resourceType": "sites"
+          }
+        ]
+      },
+      {
+        "id": null,
+        "namespace": "Microsoft.ContainerRegistry",
+        "providerAuthorizationConsentState": null,
+        "registrationPolicy": null,
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiProfiles": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "defaultApiVersion": null,
+            "locationMappings": null,
+            "locations": [
+              "eastus2"
+            ],
+            "properties": null,
+            "resourceType": "registries"
+          }
+        ]
+      }
+    ],
+    "provisioningState": "Succeeded",
+    "templateHash": "1914786115119863930",
+    "templateLink": null,
+    "timestamp": "2021-12-04T12:07:47.563195+00:00",
+    "validatedResources": null
+  },
+  "resourceGroup": "testmcwarg",
+  "tags": null,
+  "type": "Microsoft.Resources/deployments"
+}

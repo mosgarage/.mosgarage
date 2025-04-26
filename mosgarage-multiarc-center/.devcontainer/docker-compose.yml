@@ -1,0 +1,17 @@
+version: '3.3'
+services:
+  dcworkspace:
+    dns:
+      - 1.1.1.1    
+    env_file: ../configuration/.default.env
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - "..:/dcworkspace"
+      - "~/.gitignore:/home/dcuser/.gitignore"
+      - "~/.ssh:/home/dcuser/.ssh"
+      - "/var/run/docker.sock:/var/run/docker.sock"
+    ports:
+      - "127.0.0.1:8888:8888"
+    command: sleep infinity
